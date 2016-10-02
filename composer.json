@@ -1,0 +1,24 @@
+{
+  "name": "richardhj/oauth2-epost",
+  "description": "E-POSTBUSINESS OAuth 2.0 Client Provider for The PHP League OAuth2-Client",
+  "authors": [
+    {
+      "name": "Richard Henkenjohann",
+      "email": "richard@henkenjohann.me",
+      "homepage": "http://henkenjohann.me",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "email": "richard@henkenjohann.me"
+  },
+  "require": {
+    "php": "^5.4 || ^7.0",
+    "league/oauth2-client": "~1.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "EPost\\OAuth2\\Client\\": "src/"
+    }
+  }
+}
