@@ -13,6 +13,7 @@ namespace EPost\OAuth2\Client\Provider;
 use League\OAuth2\Client\Provider\AbstractProvider;
 use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
 use League\OAuth2\Client\Token\AccessToken;
+use League\OAuth2\Client\Tool\RequiredParameterTrait;
 use Psr\Http\Message\ResponseInterface;
 
 
@@ -22,6 +23,9 @@ use Psr\Http\Message\ResponseInterface;
  */
 class EPost extends AbstractProvider
 {
+
+    use RequiredParameterTrait;
+
 
     /**
      * The login endpoint for production
@@ -68,7 +72,7 @@ class EPost extends AbstractProvider
      */
     public function __construct(array $options = [], array $collaborators = [])
     {
-        $this->assertRequiredOptions($options);
+        $this->checkRequiredParameters($this->getRequiredOptions(), $options);
 
         $possible = $this->getConfigurableOptions();
         $configured = array_intersect_key($options, array_flip($possible));
@@ -209,25 +213,5 @@ class EPost extends AbstractProvider
             'lif',
             'scopes',
         ];
-    }
-
-
-    /**
-     * Verifies that all required options have been passed
-     *
-     * @param  array $options
-     *
-     * @return void
-     * @throws \InvalidArgumentException
-     */
-    protected function assertRequiredOptions(array $options)
-    {
-        $missing = array_diff_key(array_flip($this->getRequiredOptions()), $options);
-
-        if (!empty($missing)) {
-            throw new \InvalidArgumentException(
-                'Required options not defined: '.implode(', ', array_keys($missing))
-            );
-        }
     }
 }
