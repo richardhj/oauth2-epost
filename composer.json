@@ -4,13 +4,12 @@
   "authors": [
     {
       "name": "Richard Henkenjohann",
-      "email": "richard@henkenjohann.me",
-      "homepage": "http://henkenjohann.me",
+      "email": "richard-epost@henkenjohann.me",
       "role": "Developer"
     }
   ],
   "support": {
-    "email": "richard@henkenjohann.me"
+    "email": "richard-epost@henkenjohann.me"
   },
   "require": {
     "php": "^5.4 || ^7.0",
