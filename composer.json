@@ -1,6 +1,7 @@
 {
   "name": "richardhj/oauth2-epost",
   "description": "E-POSTBUSINESS OAuth 2.0 Client Provider for The PHP League OAuth2-Client",
+  "license": "LGPL-3.0+",
   "authors": [
     {
       "name": "Richard Henkenjohann",
