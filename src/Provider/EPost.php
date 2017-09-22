@@ -1,14 +1,17 @@
 <?php
+
 /**
- * E-POSTBUSINESS API integration for Contao Open Source CMS
+ * This file is part of richardhj/oauth2-epost.
  *
- * Copyright (c) 2015-2016 Richard Henkenjohann
+ * Copyright (c) 2015-2017 Richard Henkenjohann
  *
- * @package E-POST
- * @author  Richard Henkenjohann <richard-epost@henkenjohann.me>
+ * @package   richardhj/oauth2-epost
+ * @author    Richard Henkenjohann <richardhenkenjohann@googlemail.com>
+ * @copyright 2015-2017 Richard Henkenjohann
+ * @license   https://github.com/richardhj/oauth2-epost/blob/master/LICENSE LGPL-3.0
  */
 
-namespace EPost\OAuth2\Client\Provider;
+namespace Richardhj\EPost\OAuth2\Client\Provider;
 
 use League\OAuth2\Client\Provider\AbstractProvider;
 use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
@@ -19,7 +22,7 @@ use Psr\Http\Message\ResponseInterface;
 
 /**
  * Class EPost
- * @package EPost\OAuth2\Client\Provider
+ * @package Richardhj\EPost\OAuth2\Client\Provider
  */
 class EPost extends AbstractProvider
 {
