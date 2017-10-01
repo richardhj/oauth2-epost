@@ -1,5 +1,6 @@
 # E-POSTBUSINESS Provider for OAuth 2.0 Client
 
+[![Build Status][ico-build]][link-build]
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]]()
 [![Dependency Status][ico-dependencies]][link-dependencies]
@@ -36,9 +37,11 @@ $provider = new EPost\OAuth2\Client\Provider\EPost(
 
 The  GNU Lesser General Public License (LGPL).
 
+[ico-build]: https://travis-ci.org/richardhj/epost-api.svg?branch=master?style=flat-square
 [ico-version]: https://img.shields.io/packagist/v/richardhj/oauth2-epost.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-LGPL-brightgreen.svg?style=flat-square
 [ico-dependencies]: https://www.versioneye.com/php/richardhj:oauth2-epost/badge.svg?style=flat-square
 
+[link-build]: https://travis-ci.org/richardhj/epost-api
 [link-packagist]: https://packagist.org/packages/richardhj/oauth2-epost
 [link-dependencies]: https://www.versioneye.com/php/richardhj:oauth2-epost
