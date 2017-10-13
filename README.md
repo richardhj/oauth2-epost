@@ -21,7 +21,7 @@ But instead of the `GenericProvider` you're going to use this provider.
 
 This is how to initiate the provider:
 ```php
-$provider = new EPost\OAuth2\Client\Provider\EPost(
+$provider = new Richardhj\EPost\OAuth2\Client\Provider\EPost(
     [
         'clientId'              => sprintf('%s,%s', EPOST_DEV_ID, EPOST_APP_ID),
         'redirectUri'           => 'http://localhost:8080/oauth2_redirect.php', // Only necessary for the Authorization Code Grant flow
