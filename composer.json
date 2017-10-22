@@ -14,11 +14,11 @@
   },
   "require": {
     "php": "^5.4 || ^7.0",
-    "league/oauth2-client": "~1.4"
+    "league/oauth2-client": "^1.4 || ^2.0"
   },
   "autoload": {
     "psr-4": {
-      "EPost\\OAuth2\\Client\\": "src/"
+      "Richardhj\\EPost\\OAuth2\\Client\\": "src/"
     }
   }
 }
